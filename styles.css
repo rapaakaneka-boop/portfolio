@@ -373,6 +373,29 @@ img{ max-width: 100%; display: block; }
 }
 .work-card h3{ font-size: 16.5px; margin: 16px 20px 4px; }
 .work-card p{ margin: 0 20px 20px; color: var(--ink-soft); font-size: 14px; }
+.portfolio-link-card{
+  margin-top: 28px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--blue-900);
+  color: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--blue-900);
+  box-shadow: 0 16px 30px -20px rgba(23, 35, 61, .65);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.portfolio-link-card:hover{
+  background: var(--blue-700);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 34px -20px rgba(23, 35, 61, .7);
+}
+.portfolio-link-content{ display: flex; flex-direction: column; gap: 3px; }
+.portfolio-link-label{ font-family: var(--font-display); font-size: 18px; font-weight: 700; }
+.portfolio-link-url{ color: rgba(255, 253, 248, .76); font-size: 14px; }
+.portfolio-link-action{ font-weight: 700; white-space: nowrap; }
 
 /* ---------- 9. SERTIFIKAT / PRESTASI ---------- */
 .cert-list{ display: flex; flex-direction: column; }
@@ -570,6 +593,7 @@ img{ max-width: 100%; display: block; }
   .nav-cta{ margin-top: 4px; }
   .blog-grid{ grid-template-columns: 1fr; }
   .profile-row{ grid-template-columns: 1fr; gap: 4px; }
+  .portfolio-link-card{ align-items: flex-start; flex-direction: column; gap: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce){
